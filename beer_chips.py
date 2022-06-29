@@ -9,10 +9,10 @@ chips_count = int(input())
 beers_price = BEER_PRICE * beers_count
 chips_price = beers_price * 0.45
 all_chips_price = math.ceil(chips_price * chips_count)
-sum = beers_price * all_chips_price
+sum = beers_price + all_chips_price
 
 diff = abs(sum - budget)
 if budget >= sum:
-    print(f"{name} bought a snack and has {diff:.2f} leva left.")
+    print(f"{name} bought a snack and has {diff:.2f} leva left!")
 else:
-    print(f"{name} needs {diff:.2f} more leva.")
+    print(f"{name} needs {diff:.2f} more leva!")
